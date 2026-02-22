@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KodNest Premium Build System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="top-bar">
+        <div class="project-name">KodNest Premium Build System</div>
+        <div class="progress-indicator">Step 2 / 5</div>
+        <div class="status-badge">In Progress</div>
+      </header>
+
+      <section class="context-header">
+        <h1>Design with confidence, build with evidence.</h1>
+        <p>
+          A calm and coherent workspace for premium SaaS execution, from guided steps to verified delivery.
+        </p>
+      </section>
+
+      <main class="workspace-layout">
+        <section class="primary-workspace">
+          <article class="card">
+            <h2>Primary Workspace</h2>
+            <p>
+              This space hosts the core interaction surface. Content is intentionally structured to keep focus on one
+              high-value action at a time.
+            </p>
+            <label for="objective">Current objective</label>
+            <input id="objective" type="text" placeholder="Define the next outcome to ship" />
+            <label for="details">Implementation notes</label>
+            <textarea
+              id="details"
+              rows="6"
+              placeholder="Capture constraints, expected behavior, and verification criteria"
+            ></textarea>
+            <div class="button-row">
+              <button class="btn btn-primary" type="button">Continue</button>
+              <button class="btn btn-secondary" type="button">Save Draft</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Error and empty state guidance</h2>
+            <div class="state-block state-empty">
+              <h3>No artifact attached yet</h3>
+              <p>Add a screenshot or output proof so this step can be reviewed and approved.</p>
+            </div>
+            <div class="state-block state-error">
+              <h3>Build check did not pass</h3>
+              <p>
+                The current output is missing required validation details. Re-run the verification command and paste the
+                complete result to continue.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <aside class="secondary-panel">
+          <article class="card">
+            <h2>Step explanation</h2>
+            <p>Use the prompt below in your builder to generate the intended UI structure and return with proof.</p>
+          </article>
+
+          <article class="card">
+            <h2>Copyable prompt</h2>
+            <div class="prompt-box">
+              Build the current step using the KodNest Premium Build System tokens, layout order, and validation rules.
+            </div>
+            <div class="panel-actions">
+              <button class="btn btn-secondary" type="button">Copy</button>
+              <button class="btn btn-secondary" type="button">Build in Lovable</button>
+              <button class="btn btn-secondary" type="button">It Worked</button>
+              <button class="btn btn-secondary" type="button">Error</button>
+              <button class="btn btn-secondary" type="button">Add Screenshot</button>
+            </div>
+          </article>
+        </aside>
+      </main>
+
+      <footer class="proof-footer">
+        <h2>Proof Footer</h2>
+        <ul>
+          <li>
+            <label><input type="checkbox" /> UI Built</label>
+            <input type="text" placeholder="Attach proof input" />
+          </li>
+          <li>
+            <label><input type="checkbox" /> Logic Working</label>
+            <input type="text" placeholder="Attach proof input" />
+          </li>
+          <li>
+            <label><input type="checkbox" /> Test Passed</label>
+            <input type="text" placeholder="Attach proof input" />
+          </li>
+          <li>
+            <label><input type="checkbox" /> Deployed</label>
+            <input type="text" placeholder="Attach proof input" />
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
